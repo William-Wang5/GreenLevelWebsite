@@ -1,5 +1,5 @@
 
-list = [['Community Use Rental', "Green Level Women's V Soccer at Chapel Hill High School"], []], [], [], [], [], []]
+list = [['Community Use Rental', "Green Level Women's V Soccer at Chapel Hill High School"], [], [], [], [], [], []]
 
 
 const times = [
