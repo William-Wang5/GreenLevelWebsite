@@ -394,90 +394,90 @@ body {
 
 .wakeIDlog {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(links/wakeid-login.jpg);
+    url(wakeid-login.jpg);
   background-size: cover;
   transition: all 0.25s;
 }
 
 .wakeIDlog:hover {
-  background-image: url(links/wakeid-login.jpg);
+  background-image: url(wakeid-login.jpg);
 }
 
 .wakeID {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(links/wakeid-home.jpg);
+    url(wakeid-home.jpg);
   background-size: cover;
   transition: all 0.25s;
 }
 
 .wakeID:hover {
-  background-image: url(links/wakeid-home.jpg);
+  background-image: url(wakeid-home.jpg);
 }
 
 .glhs {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(links/grenLevel.jpg);
+    url(grenLevel.jpg);
   background-size: cover;
   transition: all 0.25s;
 }
 
 .glhs:hover {
-  background-image: url(links/grenLevel.jpg);
+  background-image: url(grenLevel.jpg);
 }
 
 .alltimely {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(links/gatortime.jpg);
+    url(gatortime.jpg);
   background-size: cover;
   transition: all 0.25s;
 }
 
 .alltimely:hover {
-  background-image: url(links/gatortime.jpg);
+  background-image: url(gatortime.jpg);
 }
 
 .wakeTech {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(links/ccp.jpg);
+    url(ccp.jpg);
   background-size: cover;
   transition: all 0.25s;
 }
 
 .wakeTech:hover {
-  background-image: url(links/ccp.jpg);
+  background-image: url(ccp.jpg);
 }
 
 .covid {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(links/covid-test.jpg);
+    url(covid-test.jpg);
   background-size: cover;
   transition: all 0.25s;
 }
 
 .covid:hover {
-  background-image: url(links/covid-test.jpg);
+  background-image: url(covid-test.jpg);
 }
 
 .club {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(links/clubz.jpg);
+    url(clubz.jpg);
   background-size: cover;
   transition: all 0.25s;
 }
 
 .club:hover {
-  background-image: url(links/clubz.jpg);
+  background-image: url(clubz.jpg);
 }
 
 .paper {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(links/paper.jpg);
+    url(paper.jpg);
   background-size: cover;
   transition: all 0.25s;
 }
 
 .paper:hover {
-  background-image: url(links/paper.jpg);
+  background-image: url(paper.jpg);
 }
 
 /*###################*/
