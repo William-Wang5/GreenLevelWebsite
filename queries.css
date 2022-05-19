@@ -1,0 +1,38 @@
+@media (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 950px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/*################*/
+/*MEDIA QUERIES FOR LINKS.HTML*/
+/*################*/
+
+@media (max-width: 780px) {
+  .links-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .links-grid {
+    padding: 6rem 1rem 6rem 1rem;
+  }
+}
+
+@media (max-width: 605px) {
+  .links-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 580px) {
+  .one-link {
+    padding: 12rem 1rem 12rem 1rem;
+  }
+}

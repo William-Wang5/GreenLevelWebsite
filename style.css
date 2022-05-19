@@ -1,0 +1,583 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background-color: #fafafa;
+}
+
+/*#2f9e44
+#0b7285
+*/
+.section-top {
+  background-color: #2b8a3e;
+  margin-bottom: 4.8rem;
+  box-shadow: 0 4px 2rem -2rem rgba(0, 0, 0, 0.247);
+}
+
+.container {
+  /* 1140px */
+  padding: 0 3.2rem;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.circle-time {
+  font-weight: 450;
+  font-size: 4rem;
+  text-align: center;
+  letter-spacing: .5px;
+}
+
+.circle-text {
+  font-size: 2.6rem;
+  white-space: pre-wrap;
+  font-weight: 400;
+  text-align: center;
+}
+
+.circle {
+  background-color: #fafafa;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 33rem;
+  width: 33rem;
+  border-radius: 50%;
+}
+
+.inside {
+  height: 40rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section-top .section-main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.matorSenpai {
+  background-color: #fafafa;
+  border-radius: 5%;
+}
+
+.mator-img {
+  width: 40%;
+  position: relative;
+  top: -2.4rem;
+}
+
+.textz {
+  position: relative;
+  top: -1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  background-color: #0b7285;
+  padding: 2rem;
+  border-radius: 6%;
+  color: #fff;
+}
+
+.what-type {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+.times {
+  font-size: 2.2rem;
+}
+
+.date {
+  font-size: 2rem;
+  border-radius: 15px;
+  background-color: #fff;
+  text-align: center;
+  width: 32rem;
+  padding: 0.35rem;
+}
+
+.date-text {
+  color: black;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+}
+
+/*###################*/
+/* SCHEDULE SECTION */
+/*###################*/
+.section-main {
+  margin-bottom: 6.4rem;
+}
+
+.super {
+  height: 46rem;
+}
+
+.left {
+  grid-column: 1 / span 1;
+  grid-auto-rows: min-content;
+}
+
+.right {
+  grid-column: span 1 / -1;
+  grid-auto-rows: min-content;
+}
+
+.smaller-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+}
+
+.small {
+  background-color: #2b8a3e;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  border-radius: 9px;
+  box-shadow: 0rem 0rem 1.4rem 0rem rgba(0, 0, 0, 0.2);
+  height: 40rem;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.small:hover {
+  transform: scale(1.05);
+}
+
+.small-blue {
+  background-color: #0b7285;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  border-radius: 9px;
+  box-shadow: 0rem 0rem 1.4rem 0rem rgba(0, 0, 0, 0.2);
+  height: 40rem;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.small-blue:hover {
+  transform: scale(1.05);
+}
+
+.link-icon {
+  width: 10rem;
+  height: 10rem;
+}
+
+.the-main {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 9px;
+  box-shadow: 0rem 0rem 1.4rem 0rem rgba(0, 0, 0, 0.2);
+}
+
+.the-main-events {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 9px;
+  box-shadow: 0rem 0rem 1.4rem 0rem rgba(0, 0, 0, 0.2);
+  padding-bottom: 2rem;
+}
+
+.schedule-header {
+  text-align: center;
+  font-size: 3.2rem;
+  letter-spacing: 1px;
+  margin-bottom: 2.6rem;
+  margin-top: 1.4rem;
+}
+
+.schedules {
+  list-style: none;
+  font-size: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.schedule {
+  border: 2px solid #2b8a3e;
+  border-radius: 11px;
+  padding: 1rem;
+  position: relative;
+}
+
+.schedule:before {
+  position: absolute;
+  left: 2%;
+  color: #0b7285;
+  font-weight: 500;
+}
+
+.first:before {
+  content: "First Period";
+}
+
+.advisory:before {
+  content: "Advisory";
+}
+
+.second:before {
+  content: "Second Period";
+}
+
+.third:before {
+  content: "Third Period";
+}
+
+.third {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.fourth:before {
+  content: "Fourth Period";
+}
+
+/*###################*/
+/* UPCOMING EVENTS SECTION */
+/*###################*/
+.event-header {
+  margin-bottom: 4.8rem;
+}
+
+.the-day {
+  border-top: 2px solid #2b8a3e;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+}
+
+.last {
+  border-bottom: 2px solid #2b8a3e;
+}
+
+.day-header {
+  font-size: 2.4rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.day-date {
+  font-size: 1.4rem;
+  text-align: left;
+  margin-bottom: 1.2rem;
+}
+
+.amazing-events {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.the-event {
+  text-align: center;
+  font-size: 2.4rem;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.event1 {
+  border: 2px solid #2b8a3e;
+  background-color: #2b8a3e;
+  border-radius: 11px;
+  padding: 2rem 1rem 2rem;
+}
+
+.event2 {
+  border: 2px solid #0b7285;
+  background-color: #0b7285;
+  border-radius: 11px;
+  padding: 2rem 1rem 2rem;
+}
+
+.event3 {
+  border: 2px solid #60850b;
+  background-color: #60850b;
+  border-radius: 11px;
+  padding: 2rem 1rem 2rem;
+}
+
+/*###################*/
+/* LINKS SECTION */
+/*###################*/
+.lol-meme {
+  color: white;
+}
+
+.go-main-menu {
+  display: flex;
+  border-bottom: 2px solid #2b8a3e;
+  justify-content: space-around;
+}
+
+.house {
+  text-decoration: none;
+  height: 5rem;
+  width: 5rem;
+  color: #2f9e44;
+  transition: all 1s;
+  align-self: center;
+  margin-top: 3rem;
+}
+
+.house:hover {
+  color: #2b8a3e;
+}
+
+.title-header {
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  color: #2b8a3e;
+  font-size: 5.2rem;
+}
+
+.links-grid {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.one-link {
+  text-decoration: none;
+  color: #fafafa;
+  font-weight: 500;
+  text-align: center;
+  font-size: 3.2rem;
+  border: 2px solid #2b8a3e;
+  border-radius: 11px;
+  padding: 8rem 1rem 8rem 1rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.one-link:hover {
+  color: transparent;
+}
+
+.wakeIDlog {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(links/wakeid-login.jpg);
+  background-size: cover;
+  transition: all 0.25s;
+}
+
+.wakeIDlog:hover {
+  background-image: url(links/wakeid-login.jpg);
+}
+
+.wakeID {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(links/wakeid-home.jpg);
+  background-size: cover;
+  transition: all 0.25s;
+}
+
+.wakeID:hover {
+  background-image: url(links/wakeid-home.jpg);
+}
+
+.glhs {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(links/grenLevel.jpg);
+  background-size: cover;
+  transition: all 0.25s;
+}
+
+.glhs:hover {
+  background-image: url(links/grenLevel.jpg);
+}
+
+.alltimely {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(links/gatortime.jpg);
+  background-size: cover;
+  transition: all 0.25s;
+}
+
+.alltimely:hover {
+  background-image: url(links/gatortime.jpg);
+}
+
+.wakeTech {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(links/ccp.jpg);
+  background-size: cover;
+  transition: all 0.25s;
+}
+
+.wakeTech:hover {
+  background-image: url(links/ccp.jpg);
+}
+
+.covid {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(links/covid-test.jpg);
+  background-size: cover;
+  transition: all 0.25s;
+}
+
+.covid:hover {
+  background-image: url(links/covid-test.jpg);
+}
+
+.club {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(links/clubz.jpg);
+  background-size: cover;
+  transition: all 0.25s;
+}
+
+.club:hover {
+  background-image: url(links/clubz.jpg);
+}
+
+.paper {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(links/paper.jpg);
+  background-size: cover;
+  transition: all 0.25s;
+}
+
+.paper:hover {
+  background-image: url(links/paper.jpg);
+}
+
+/*###################*/
+/* BELLS SECTION */
+/*###################*/
+.all-schedules {
+  margin-top: 4.8rem;
+  margin-bottom: 4.8rem;
+}
+
+.schedules-header {
+  text-align: left;
+  font-size: 3.2rem;
+  margin-bottom: 4.8rem;
+}
+
+.standard-schedule {
+  /*background: linear-gradient(to bottom right, #99e9f2, #0c8599); */
+  background-color: #fafafa;
+  border-radius: 9px;
+  box-shadow: 0 0px 1.5rem 0.2rem rgba(0, 0, 0, 0.11);
+  padding: 2rem;
+}
+
+.entire-schedule {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.one-schedule {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.25rem;
+  background-color: #2b8a3e;
+  border-radius: 9px;
+  padding: 2rem 8rem;
+}
+
+.non {
+  padding: 2rem 10.7rem;
+}
+
+.time {
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 500;
+}
+
+.period {
+  font-size: 2rem;
+  border-radius: 50%;
+  background-color: white;
+  height: 4.4rem;
+  width: 4.4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+}
+
+.all-schedules {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+/*###################*/
+/* SETTINGS SECTION */
+/*###################*/
+.contact-us {
+  margin-top: 4.8rem;
+}
+
+.contact-text {
+  font-size: 2.4rem;
+}
+
+.email {
+  text-decoration: none;
+  color: #2b8a3e;
+}
+
+.copy {
+  border-top: solid 2px #333;
+  padding-top: 1rem;
+  margin-top: 40rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.the-section {
+  border-bottom: solid 1px #555;
+  padding-bottom: 4.8rem;
+  padding-top: 4.8rem;
+}
+
+.the-section-last {
+  padding-bottom: 4.8rem;
+  padding-top: 4.8rem;
+}
