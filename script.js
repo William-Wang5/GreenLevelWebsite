@@ -1,5 +1,5 @@
 
-list = [[],[],[]]
+list = [['Community Use Rental'], ['Memorial Day - No School'], ['Exam Review Day'], ['Community Use Rental'], ['Semester Two Exam Week'], [], []]
 
 
 const times = [
@@ -111,9 +111,26 @@ function change() {
       document.getElementsByClassName("amazing-events")[x].appendChild(board);
     }
     document.getElementsByClassName("day-header")[x].innerText = days[schoolDay];
-    document.getElementsByClassName("day-date")[x].innerText = months[month] + " " + (parseInt(date.getDate() + x));
+    let dayDate = 0;
+    let doop = false;
+    if ((month) % 2 == 0){
+      console.log(month);
+      if ((date.getDate() + x) > 31){
+        console.log(date.getDate() + x);
+      dayDate = (x + 1) - x;
+      doop = true;
+      } else{
+        dayDate = date.getDate() + x;
+      }
+    }
+    if (doop){
+    document.getElementsByClassName("day-date")[x].innerText = months[month + 1] + " " + (parseInt(dayDate));
+    }else{
+      document.getElementsByClassName("day-date")[x].innerText = months[month] + " " + (parseInt(dayDate));
 
+    }
     if (schoolDay < 6) {
+      
       schoolDay += 1;
     } else {
       schoolDay = 0;
